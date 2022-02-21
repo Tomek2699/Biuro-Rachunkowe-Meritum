@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biuro rachunkowe Meritum</title>
+
+    <!-- Shortcut Icon -->
+    <link rel="shortcut icon" href="Image/ShorcutLogo.jpg">
+
+    <!-- Keywords -->
+    <meta name="keywords" content="Księgowa, Ksiegowa, Księgowa Ustrzyki Dolne, Ksiegowa Ustrzyki Dolne, Biuro rachunkowe, Biuro rachunkowe Meritum, Biuro rachunkowe Ustrzyki Dolne">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Abhaya+Libre&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Alatsi&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <!-- Style Css -->
+    <link href="CSS/szablon.css" rel="stylesheet">
+    <link href="CSS/Header.css" rel="stylesheet">
+    <link href="CSS/RWD.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div id="SzablonContainer">
+        <Header>
+            <div id="Logo">
+                <a href="#SzablonContainer">
+                    <img src="Image/LargeLogo.png" alt="">
+                </a>
+            </div>
+            <div id="Menu" onclick="DropMenu()">
+                <img src="Image/MenuIcon.png" alt="" width="40px" height="40px">
+            </div>
+            <div class="NavBar" id="DropMenu">
+                <div><a href="#Opis1" class="NavElements" onclick="ExitMenu()">KSIĘGOWA</a></div>
+                <div><a href="#Oferta1" class="NavElements" onclick="ExitMenu()">OFERTA</a></div>
+                <div><a href="#DlaczegoMy1" class="NavElements" onclick="ExitMenu()">DLACZEGO MY</a></div>
+                <div><a href="#Certyfikaty1" class="NavElements" onclick="ExitMenu()">CERTYFIKATY</a></div>
+                <div><a href="#Biuro1" class="NavElements" onclick="ExitMenu()">BIURO</a></div>
+                <div><a href="#AbcPodatnika1" class="NavElements" onclick="ExitMenu()">ABC PODATNIKA</a></div>
+                <div><a href="#Kontakt1" class="NavElements" onclick="ExitMenu()">KONTAKT</a></div>
+            </div>
+        </Header>
+            <div id="ContentContainer" onclick="ExitMenu()">
+                <div id="Księgowa" class="text-container">
+                    <div class="heading" data-aos="fade-right">
+                        <h1>Małgorzata Dyrda</h1>
+                        <hr>
+                    </div>
+                    <div class="main-text" data-aos="fade-left">
+                        <p>Twoja księgowa na telefon!</p>
+                    </div>
+
+                    <a href="#Opis1" class="Buttons" data-aos="fade-up">
+                        <div id="Button1">DOWIEDZ SIĘ WIĘCEJ</div>
+                    </a>
+                    <span id="Opis1"></span>
+                </div>
+
+                <div id="Opis" class="text-container">
+                    <div class="heading" data-aos="fade-right">
+                        <h1>Twój biznes - moje doświadczenie</h1>
+                        <hr>
+                    </div>
+                    <div class="main-text" id="Opis-contents" data-aos="fade-up">
+                        <p>
+                            Biuro Rachunkowe powstało na fundamentach ponad 20 letniego doświadczenia
+                            związanego z prowadzeniem księgowości podmiotów o różnym profilu działalności. Właścicielka biura
+                            Małgorzata Dyrda – księgowa z pasją z powodzeniem pomaga nowym i istniejącym firmom w otwarciu,
+                            tworzeniu i prowadzeniu działalności gospodarczej, a także w odnalezieniu się na rynku gospodarczym
+                            i w gąszczu ciągle zmieniających się przepisów podatkowych.
+                        </p>
+                    </div>
+                    <a href="#Oferta1" class="Buttons" data-aos="fade-up">
+                        <div id="Button2">ZACZYNAJMY!</div>
+                    </a>
+                    <span id="Oferta1"></span>
+                </div>
+
+                <div id="Oferta" class="text-container shadow-box-container">
+                    <div class="heading" data-aos="fade-right">
+                        <h1>Oferta</h1>
+                        <hr>
+                    </div>
+                    <div class="main-text" id="Oferta-contents" data-aos="fade-up">
+                        <p>
+                            <ul>
+                                <li>Księgi handlowe</li>
+                                <li>Księgi przychodów i rozchodów</li>
+                                <li>Ryczałt od przychodów ewidencjonowanych</li>
+                                <li>Karta podatkowa</li>
+                                <li>Obsługa kadrowo-płacowa</li>
+                                <li>Księgowość Fundacji i Stowarzyszeń</li>
+                                <li>Księgowość Wspólnot Mieszkaniowych</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <span id="DlaczegoMy1"></span>
+                </div>
+
+                <div id="DlaczegoMy" class="text-container">
+                    <div class="heading" data-aos="fade-right">
+                        <h1>Dlaczego My</h1>
+                        <h3>Postaw na doświadczenie i profesjonalizm</h3>
+                        <hr>
+                    </div>
+                    <div class="main-text" id="DlaczegoMy-contents">
+                        <div class="DlaczegoMy-div">
+                            <img class="DlaczegoMy-img" src="Image/Computer.png" alt="Computer" data-aos="zoom-in">
+                            <h2 data-aos="fade-up">Nowe Technologie</h2>
+                            <p data-aos="fade-up">Dysponujemy nowoczesnym oprogramowaniem księgowym</p>
+                        </div>
+                        <div class="DlaczegoMy-div">
+                            <img class="DlaczegoMy-img" src="Image/ManHike.png" alt="ManHike" data-aos="zoom-in">
+                            <h2 data-aos="fade-up">Wyzwania</h2>
+                            <p data-aos="fade-up">Rozwiązywanie trudnych sytuacji księgowych</p>
+                        </div>
+                        <div class="DlaczegoMy-div">
+                            <img class="DlaczegoMy-img" src="Image/Newspaper.png" alt="Newspaper" data-aos="zoom-in">
+                            <h2 data-aos="fade-up">Na bieżąco</h2>
+                            <p data-aos="fade-up">Podążanie za nowymi przepisami prawnymi</p>
+                        </div>
+                        <div class="DlaczegoMy-div">
+                            <img class="DlaczegoMy-img" src="Image/Padlock.png" alt="Padlock" data-aos="zoom-in">
+                            <h2 data-aos="fade-up">Bezpieczeństwo</h2>
+                            <p data-aos="fade-up">Pełna odpowiedzialność, ubezpieczenie OC, reprezentacja przed US i ZUS</p>
+                        </div>
+                    </div>
+                    <span id="Certyfikaty1"></span>
+                </div>
+
+                <div id="Certyfikaty" class="text-container shadow-box-container">
+                    <div class="heading" data-aos="fade-right">
+                        <h1>Certyfikaty</h1>
+                        <hr>
+                    </div>
+                    <div class="main-text" id="Certyfikaty-contents">
+                        <div id="Certyfikat" data-aos="flip-left" data-aos-duration="2000">
+                            <img class="Certyfikaty-img" src="Image/certyfikat.png" alt="Certyfikat" onclick="LightBox(this.src)">
+                        </div>
+                        <div id="Zaswiadczenie" data-aos="flip-up" data-aos-duration="2000">
+                            <img class="Certyfikaty-img" src="Image/zaswiadczenie.png" alt="Zaswiadczenie" onclick="LightBox(this.src)">
+                        </div>
+                        <div id="CertyfikatCik" data-aos="flip-right" data-aos-duration="2000">
+                            <img class="Certyfikaty-img" src="Image/certyfikatCik.jpg" alt="Certyfikat CIK" onclick="LightBox(this.src)">
+                        </div>
+                    </div>
+                    <span id="Biuro1"></span>
+                </div>
+
+                <div id="Biuro" class="text-container">
+                    <div class="heading" data-aos="fade-right">
+                        <h1>Biuro</h1>
+                        <hr>
+                    </div>
+                    <div class="main-text" id="Biuro-contents" data-aos="fade-up">
+                        <p>
+                            Siedziba biura mieści się w domu, co pozwala pozostać do dyspozycji i przyjmować
+                            dokumenty praktycznie cały dzień, również w weekendy. Chętnie gościmy naszych Klientów, gdyż mamy
+                            świadomość, że są częścią naszego życia.
+                            Tym samym wyróżniamy się spośród konkurencji pozostając w prawdziwych, a nie wirtualnych relacjach z
+                            naszymi Klientami.
+                        </p>
+                    </div>
+                    <span id="AbcPodatnika1"></span>
+                </div>
+
+                <div id="AbcPodatnika" class="text-container shadow-box-container">
+                    <div class="heading" data-aos="fade-right">
+                        <h1>ABC Podatnika</h1>
+                        <h3>Czyli o czym warto pamiętać?</h3>
+                        <hr>
+                    </div>
+                        <a href="Files/ABC Podatnika Biuro Meritum.pdf" class="Buttons" target="_blank" data-aos="fade-up">
+                            <div id="Button3">KLIKNIJ ABY POBRAĆ</div>
+                        </a>
+                        <span id="Kontakt1"></span>
+                </div>
+
+                <div id="Kontakt" class="text-container">
+                    <div class="heading" data-aos="fade-right">
+                        <h1>Bądźmy w kontakcie!</h1>
+                        <hr>
+                        <h4>Potrzebujesz usług księgowych?<br>Zapraszam do kontaktu.</h4>
+                    </div>
+                    <div class="main-text" id="Kontakt-contents">
+                        <div id="Phone">
+                            <img class="Kontakt-img" src="Image/Phone.png" alt="Kontakt" data-aos="zoom-in">
+                            <h4 data-aos="fade-up">505333142</h4>
+                        </div>
+                        <div id="Mail">
+                                <a href="mailto:biuro@ksiegowaustrzyki.pl" data-aos="zoom-in"><img class="Kontakt-img" src="Image/Mail.png" alt="Mail"></a>
+                                <a href="mailto:biuro@ksiegowaustrzyki.pl"><h4 data-aos="fade-up">biuro@ksiegowaustrzyki.pl</h4></a>
+                        </div>
+                        <div id="Facebook">
+                            <a href="https://www.facebook.com/24ksiegowa" target="_blank" data-aos="zoom-in"><img class="Kontakt-img" src="Image/Facebook.png" alt="Facebook"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Mapa" class="shadow-box-container">
+                    <iframe id="GoogleMaps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.26476514904!2d22.56582091532579!3d49.42280826875354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473bf2e09bd61477%3A0xec1a199866f23c90!2sLotnik%C3%B3w%206%2C%2038-700%20Ustrzyki%20Dolne!5e0!3m2!1spl!2spl!4v1623541492781!5m2!1spl!2spl" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <div id="Stopka" class="text-container">
+                    <div class="footer-logo">
+                        <a href="#SzablonContainer">
+                            <img src="Image/LargeLogo2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footer-icons-address">
+                        <div class="footer-icons">
+                            <a href="https://www.facebook.com/24ksiegowa" target="_blank"><img class="Kontakt-img" src="Image/Facebook.png" alt="Facebook"></a>
+                            <a href="mailto:biuro@ksiegowaustrzyki.pl"><img class="Kontakt-img" src="Image/Mail.png" alt="Mail"></a>
+                        </div>
+                        <div class="footer-address">
+                            <p>Biuro Rachunkowe Meritum
+                                <br>
+                                ul. Lotników 6
+                                <br>
+                                38-700 Ustrzyki Dolne
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+<script src="Js/main.js"></script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+</body>
+</html>

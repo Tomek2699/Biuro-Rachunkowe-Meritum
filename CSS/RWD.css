@@ -1,0 +1,209 @@
+@media screen and (max-height: 460px) {
+    .NavBar {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .lightbox img {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .lightbox img {
+        width: 70%;
+        height: 80%;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .text-container {
+        padding-left: 110px;
+        padding-right: 110px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #Kontakt-contents div {
+        padding: 0 20px;
+    }
+
+    .text-container {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .lightbox img {
+        width: 40%;
+    }
+
+    .footer-icons img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-address p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    Header {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "Logo NavBar";
+        background-color: #fff;
+        position: fixed;
+        width: 100%;
+    }
+
+    #Logo {
+        display: flex;
+        padding-left: 20px;
+    }
+
+    .NavBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-self: center;
+        padding: 0;
+        padding-right: 10px;
+    }
+
+    .NavElements {
+        border-radius: 10px;
+        transition: 250ms ease-in-out;
+    }
+
+    .NavElements:hover {
+        background-color: rgb(75, 75, 75);
+        color: white;
+        padding: 10px
+    }
+
+    #Księgowa {
+        padding: 200px 0;
+    }
+
+    #Menu {
+        display: none;
+    }
+
+    #DlaczegoMy {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #DlaczegoMy .main-text {
+        display: flex;
+    }
+
+    .DlaczegoMy-div {
+        padding: 0 20px;
+    }
+
+    #Kontakt-contents {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+        "Phone Mail Facebook"
+        "Map Map Map";
+    }
+
+    .text-container {
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    #GoogleMaps {
+        height: 400px;
+    }
+
+    .footer-icons img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer-address p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #Logo img {
+        width: 350px;
+        height: 70px;
+    }
+
+    .NavBar {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .NavBar div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .NavElements {
+        font-size: 18px;
+    }
+    
+    #Menu {
+        display: none;
+    }
+
+    #Księgowa {
+        padding: 315px 0;
+    }
+
+    #Księgowa > div > h1 {
+        font-size: 80px;
+    }
+
+    #Księgowa p {
+        font-size: 25px;
+    }
+
+    .DlaczegoMy-div {
+        padding: 0 10px;
+    }
+
+    #Kontakt-contents {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+        "Phone Mail Facebook"
+        "Map Map Map";
+    }
+
+    #Opis-contents, #Biuro-contents, #Kontakt-contents {
+        padding-left: 25%;
+        padding-right: 25%
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .main-text {
+        font-size: 20px;
+    }
+
+    #Button1 {
+        font-size: 20px;
+    }
+
+    #Button2 {
+        font-size: 20px;
+    }
+}

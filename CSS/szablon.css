@@ -1,0 +1,351 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+#SzablonContainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "Header"
+    "ContentContainer";
+}
+
+#ContentContainer {
+    grid-area: ContentContainer;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "Księgowa"
+    "Opis"
+    "Oferta"
+    "DlaczegoMy"
+    "Certyfikaty"
+    "Biuro"
+    "AbcPodatnika"
+    "Kontakt"
+    "Mapa"
+    "Stopka";
+}
+
+/* Header */
+Header {
+    grid-area: Header;
+}
+
+/* Księgowa */
+#Księgowa {
+    grid-area: Księgowa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    background-image: url(../Image/Background.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #FFEACE;
+}
+
+#Księgowa hr {
+    background-color: #FFEACE;
+}
+
+/* Opis */
+#Opis {
+    grid-area: Opis;
+    background-color: #FFEACE;
+}
+
+/* Oferta */
+#Oferta {
+    grid-area: Oferta;
+    background-color: #ffe4c1;
+}
+
+#Oferta ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* DlaczegoMy */
+#DlaczegoMy {
+    grid-area: DlaczegoMy;
+    background-color: #FFEACE;
+}
+
+.DlaczegoMy-div {
+    margin-top: 50px;
+}
+
+#DlaczegoMy-contents h2 {
+    margin: 0;
+    font-family: 'Alatsi', sans-serif;
+}
+
+#DlaczegoMy-contents p {
+    margin-top: 0;
+}
+
+.DlaczegoMy-img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Certyfikaty */
+#Certyfikaty {
+    grid-area: Certyfikaty;
+    background-color:  #ffe4c1;
+}
+
+#Certyfikaty-contents {
+    display: flex;
+}
+
+.Certyfikaty-img {
+    width: 60%;
+    height: 100%;
+}
+
+#Certyfikat {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#Certyfikat img {
+    padding: 3px;
+    background-color: #50372e;
+    border-top: 5px solid #FFEACE;
+    border-left: 5px solid #FFEACE;
+    border-bottom: 5px solid #FFEACE;
+    border-right: 2.5px solid #FFEACE;
+    border-radius: 10px;
+}
+
+#Zaswiadczenie {
+    display: flex;
+    justify-content: center;
+}
+
+#Zaswiadczenie img {
+    padding: 3px;
+    background-color: #50372e;
+    border-top: 5px solid #FFEACE;
+    border-left: 2.5px solid #FFEACE;
+    border-bottom: 5px solid #FFEACE;
+    border-right: 5px solid #FFEACE;
+    border-radius: 10px;
+}
+
+#CertyfikatCik {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#CertyfikatCik img {
+    padding: 3px;
+    background-color: #50372e;
+    border-top: 5px solid #FFEACE;
+    border-left: 2.5px solid #FFEACE;
+    border-bottom: 5px solid #FFEACE;
+    border-right: 5px solid #FFEACE;
+    border-radius: 10px;
+}
+
+/* Biuro */
+#Biuro {
+    grid-area: Biuro;
+    background-color: #FFEACE;
+}
+
+/* Abc Podatnika */
+#AbcPodatnika
+{
+    grid-area: AbcPodatnika;
+    background-color: #ffe4c1;
+}
+
+/* Kontakt */
+#Kontakt {
+    grid-area: Kontakt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFEACE;
+}
+
+#Kontakt-contents {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: 
+    "Phone"
+    "Mail"
+    "Facebook";
+    padding-top: 10px;
+}
+
+#Kontakt-contents h4 {
+    margin-top: 0;
+}
+
+.Kontakt-img {
+    width: 50px;
+    height: 50px;
+}
+
+#Phone {
+    grid-area: Phone;
+}
+
+#Mail {
+    grid-area: Mail;
+}
+
+#Facebook {
+    grid-area: Facebook;
+}
+
+/* Mapa */
+#Mapa {
+    grid-area: Mapa;
+    background-color: #8d8375;
+}
+
+#GoogleMaps {
+    width: 100%;
+    height: 300px;
+}
+
+/* Stopka */
+#Stopka {
+    display: grid;
+    grid-template-areas: 
+    "logo"
+    "icons-address";
+    background-color: #8d8375;
+}
+
+.footer-logo {
+    grid-area: logo;
+    padding-bottom: 20px;
+}
+
+.footer-logo img {
+    width: 50%;
+    height: 30%;
+}
+
+.footer-icons-address {
+    grid-area: icons-address;
+}
+
+.footer-icons img {
+    width: 30px;
+    height: 30px;
+    padding: 0px 5px;
+}
+
+.footer-address p {
+    font-weight: bold;
+}
+
+/* Others */
+.text-container {
+    text-align: center;
+    padding: 50px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading h1 {
+    margin-bottom: 0;
+    font-family: 'Alatsi', sans-serif;
+}
+
+.main-text {
+    font-family: 'Abhaya Libre', sans-serif;
+    font-weight: 600;
+}
+
+.shadow-box-container {
+    -webkit-box-shadow: inset 0px 20px 14px -16px rgba(141, 131, 117, 1),
+    inset 0px -20px 14px -16px rgba(141, 131, 117, 1),;
+    -moz-box-shadow: inset 0px 20px 14px -16px rgba(141, 131, 117, 1),
+    inset 0px -20px 14px -16px rgba(141, 131, 117, 1);
+    box-shadow: inset 0px 20px 14px -16px rgba(141, 131, 117, 1),
+    inset 0px -20px 14px -16px rgba(141, 131, 117, 1);
+}
+
+hr {
+    width: 50px;
+    height: 3px;
+    margin-bottom: 20px;
+    background-color: #3E2723;
+    border: none;
+}
+
+.Buttons {
+    text-decoration: none;
+}
+
+#Button1 {
+    border-radius: 30px;
+    padding: 10px 15px;
+    font-family: 'Alatsi', sans-serif;
+    background-color: #FFEACE;
+    color: #5C3317;
+    margin: 10px 0;
+}
+
+#Button2 {
+    border-radius: 30px;
+    padding: 10px 15px;
+    font-family: 'Alatsi', sans-serif;
+    background-color:  #E5D3B9;
+    color: black;
+    margin: 10px 0;
+}
+
+#Button3 {
+    border-radius: 30px;
+    padding: 10px 15px;
+    font-family: 'Alatsi', sans-serif;
+    background-color:  #E5D3B9;
+    color: black;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Lightbox */
+.lightbox {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    background-color: rgb(0, 0, 0, .8);
+    display: none;
+}
+
+.active-lightbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    width: 70%;
+    height: 90%;
+}

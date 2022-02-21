@@ -1,0 +1,58 @@
+Header {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "Logo Menu"
+    "NavBar NavBar";
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 8;
+}
+#Logo {
+    grid-area: Logo;
+    padding: 10px;
+}
+
+#Logo img {
+    width: 200px;
+    height: 40px;
+}
+
+#Menu {
+    grid-area: Menu;
+    justify-self: end;
+    
+}
+
+#Menu img {
+    padding: 10px;
+    padding-right: 20px;    
+}
+
+.NavBar {
+    grid-area: NavBar;
+    margin-left: 5px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    display: none;
+}
+
+.NavBar div {
+    padding: 4px 0;
+}
+
+.NavElements {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Abhaya Libre', sans-serif;
+    font-weight: 600;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;    
+}
